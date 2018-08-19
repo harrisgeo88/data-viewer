@@ -1,6 +1,6 @@
 {
   "name": "data-viewer",
-  "homepage": "https://github.com/harrisgeo88/data-viewer",
+  "homepage": "https://harrisgeo88.github.io/data-viewer/",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -17,6 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
