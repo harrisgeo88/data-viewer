@@ -51,10 +51,10 @@ class App extends Component {
 				<button onClick={this.reset}>Reset</button>
 				<br/>
 				{_.map(data, (d, i) => {
-					let {name, price, href, img} = d
+					let {title, description, href, img} = d
 					return <div key={i} className={'entry' + (clicked[i] === true ? ' clicked' : '')} onClick={() => this.click(href, i)}>
 						<img src={img} alt='entry'/>
-						<h2 className='title'>{i+1}. {name}<small className='subtitle'>{price}</small></h2>
+						<h2 className='title'>{i+1}. {title}<small className='subtitle'>{description}</small></h2>
 					</div>
 				})}
 			</div>
