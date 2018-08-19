@@ -47,12 +47,13 @@ class App extends Component {
 	renderHouses = () => {
 		let {data, clicked} = this.state
 		if (_.size(data)) {
-			console.log(clicked)
 			return<div>
+				<button onClick={this.reset}>Reset</button>
+				<br/>
 				{_.map(data, (d, i) => {
 					let {name, price, href, img} = d
 					return <div key={i} className={'entry' + (clicked[i] === true ? ' clicked' : '')} onClick={() => this.click(href, i)}>
-						<img src={img}/>
+						<img src={img} alt='entry'/>
 						<h2 className='title'>{i+1}. {name}<small className='subtitle'>{price}</small></h2>
 					</div>
 				})}
@@ -63,7 +64,6 @@ class App extends Component {
 	
 	render() {
 		return <div className="App">
-			<button onClick={this.reset}>Reset</button>
 			{this.renderHouses()}
 			{this.renderDropzone()}
 		</div>

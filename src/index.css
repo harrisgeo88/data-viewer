@@ -34,7 +34,9 @@ img {
 }
 
 .dropzone {
+  margin-top: 10px;
   padding-left: 10px;
+  margin-left: 10px;
   width: 500px; 
   height: 200px; 
   border: 2px dashed rgb(102, 102, 102); 
@@ -45,6 +47,7 @@ img {
 }
 
 button {
+  position: sticky;
   margin-left: 10px;
   margin-bottom: 10px;
   width: 100px;
