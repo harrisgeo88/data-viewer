@@ -1,13 +1,13 @@
 {
   "name": "data-viewer",
-  "homepage": "https://harrisgeo88.github.io/data-viewer/",
+  "homepage": "https://harrisgeo88.github.io/data-viewer",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "devDependencies": {
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "gh-pages": "^1.2.0"
   },
   "dependencies": {
-    "gh-pages": "^1.2.0",
     "lodash": "^4.17.10",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
