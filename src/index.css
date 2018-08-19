@@ -1,0 +1,55 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.entry {
+  margin: 5px;
+  float: left;
+  width: 600px;
+  border: 1px solid black;
+}
+
+.clicked {
+  text-decoration: line-through;
+}
+
+img {
+  padding: 10px;
+}
+
+.title {
+  padding-left: 10px;
+}
+
+.subtitle {
+  padding-left: 10px;
+}
+
+.dropzone {
+  padding-left: 10px;
+  width: 500px; 
+  height: 200px; 
+  border: 2px dashed rgb(102, 102, 102); 
+  border-top-left-radius: 5px; 
+  border-top-right-radius: 5px; 
+  border-bottom-right-radius: 5px; 
+  border-bottom-left-radius: 5px;
+}
+
+button {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 100px;
+  border: 1px solid grey;
+  border-radius: 2px;
+  background: red;
+  color: white;
+}
